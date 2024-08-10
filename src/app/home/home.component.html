@@ -1,0 +1,27 @@
+<nav>
+    <p class="user">{{userData.name}} <button class="log" (click)="logout()">logout</button></p>
+    <div class="logo">
+       <p> {{userData.email}} <br><a (click)="deleteAcc()">Delete Account</a></p>
+        <img [src]="userData.picture" alt="">
+    </div>
+</nav>
+<div class="content">
+    <div class="sub-content">
+        <form [formGroup]="todoForm">
+            <input type="text" name="addTask" placeholder="ADD TASK" formControlName="todoInput">
+            @if (100) {
+                <button id="but" (click)="addItem()">ADD</button>
+            }
+        </form>
+            
+        <ul>
+            @for (item of list; track $index) {
+                <br><div class="item">
+                    {{item.name}}
+                <button id="but-2" (click)="removeT(item.id)">X</button>
+                </div>
+            }       
+        </ul>
+    </div>
+</div>
+

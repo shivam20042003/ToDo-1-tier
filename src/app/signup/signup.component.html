@@ -1,0 +1,28 @@
+<div class="form">
+    <h2>Register</h2>
+    <form [formGroup]="signupForm">
+        <div>
+            <input type="text" placeholder="FullName" formControlName="FullName" />
+            @if (name&&name.invalid) {
+                <span>this field is not valid ----- Button disabled</span>
+            }
+        </div>
+         <div>
+            <input type="text" placeholder="Email" formControlName="username" />
+            @if (email&&email.invalid) {
+                <span>this field is not valid ----- Button disabled</span>
+            } 
+         </div>
+         <div>
+            <input type="password" placeholder="Password" formControlName="password" />
+            @if (pass&&pass.invalid) {
+                <span>this field is not valid ----- Button disabled</span>
+            }
+         </div>
+        <input type="text" placeholder="ConfirmPassword" formControlName="confirmPassword" />
+        <button [disabled]="signupForm.invalid" (click)="signup()">SignUp</button>
+    </form>
+    <div id="google-btn">    
+    </div>
+    <p>Already a user <a routerLink="">login</a></p>
+</div>

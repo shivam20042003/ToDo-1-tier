@@ -1,0 +1,14 @@
+<div class="form">
+    <h2>Login</h2>
+    <form [formGroup]="loginForm">
+        <input type="text" placeholder="Email" formControlName="username" />
+        <br>
+        <input type="password" placeholder="Password" formControlName="password" />
+        <br>
+        <button (click)="login()">Login</button>
+    </form>
+    <div id="google-btn"></div>
+    <p>don't have an account <a routerLink="/signup">signup</a></p>
+</div>
+
+

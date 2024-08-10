@@ -1,0 +1,97 @@
+input{
+    height: 50px;
+    width: 350px;
+    border-radius: 15px;
+    border: 0.1px solid;
+    font-size:15px;
+    padding-left: 20px;
+}
+button{
+    height: 35px;
+    width: 100px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: green;
+    color: white;
+}
+button:hover{
+    background-color:darkgreen;
+}
+nav{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding-left: 10px;
+    background-color: white;
+}
+img{
+    height: 50px;
+    border-radius: 50px;
+    margin-right: 20px;
+}
+.content{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 300px;
+}
+#but{
+    height: 50px;
+    border-radius: 15px;
+    font-size:15px;
+    margin-left: 10px;
+}
+form{
+    display: flex;
+    justify-content: space-between;
+}
+a{
+    color: red;
+    cursor: pointer;
+}
+.log{
+    background-color: green;
+    width: 50px;
+    margin-left: 10px;
+}
+.log:hover{
+    background-color: red;
+}
+.user{
+    font-size: large;
+    font-weight: bold;
+}
+ul{
+    padding-left: 0;
+    font-size: larger;
+    font-weight: bolder;
+}
+#but-2{
+    font-size: small;
+    margin-left: 10px;
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    
+}
+#but-2:hover{
+    color: red;
+    background-color: black;
+    
+}
+.item{
+    color: white;
+}
